@@ -1,0 +1,335 @@
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 20px; 
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+}
+
+.nav1 {
+  font-size: 1.3em;
+}
+
+.nav1:hover {
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+  position: relative;
+  left: 20px;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+      text-align: right;
+      flex-direction: column;
+  }
+
+  .nav1 {
+      text-align: center;
+      display: block;
+      padding: 10px;
+  }
+
+  .navbar {
+      padding: 10px;
+  }
+}
+
+
+body {
+  background-image: url("assets/6_vault_113ed76ed9 (3).jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.countdown {
+  top: 350px;
+  height: 400px;
+  position: relative;
+  background-image: url("assets/forest.jpeg");
+  background-size: cover;
+  width: 100%;
+}
+
+h6 {
+  font-size: 3em;
+  position: relative;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.container2 {
+  background-color: transparent;
+  position: relative;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+ul.date li {
+  display: inline-block;
+  font-size: 1.5em;
+  color: aliceblue;
+  list-style-type: none;
+  padding: 2em;
+  text-transform: uppercase;
+}
+
+ul.date li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+/*EVENTS*/
+
+
+.eventTitle {
+  color: aliceblue; 
+  font-weight: 600; 
+  font-family: 'Courier New', Courier, monospace; 
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+
+}
+
+.events {
+  position: relative;
+  width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 80px;
+  margin-top: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+  border-radius: 25px;
+}
+
+.container3 {
+  position: relative;
+  width: 400px; /* Increased from 360px */
+  height: 300px;
+  margin: 0;
+}
+
+.container3:hover .overlay {
+  background: rgba(0, 0, 0, .3);
+}
+
+.eventimg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 120px;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container3:hover .title {
+  top: 90px;
+}
+
+.button1 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.button1 a {
+  width: 200px;
+  padding: 12px 48px;
+  text-align: center;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container3:hover .button1 {
+  opacity: 1;
+}
+
+@media all and (max-width: 1500px) {
+  .events {
+    gap: 50px 70px;
+  }
+  
+  .container3 {
+    width: 380px; 
+  }
+}
+
+@media all and (max-width: 1350px) {
+  .container3 {
+    width: 350px; 
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .events {
+    gap: 40px 60px;
+  }
+  
+  .container3 {
+    width: 320px; 
+    height: 260px;
+  }
+  
+  .eventTitle {
+    font-size: 50px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  nav {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
+  ul.date li {
+    font-size: 1.2em;
+    padding: 1em;
+  }
+  
+  ul.date li span {
+    font-size: 3rem;
+  }
+  
+  .events {
+    gap: 40px 50px;
+  }
+  
+  .container3 {
+    width: 300px; 
+    height: 240px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .events {
+    justify-content: center;
+    gap: 30px 50px;
+  }
+  
+  .container3 {
+    width: 340px; 
+    height: 260px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  h6 {
+    font-size: 2em;
+    top: 100px;
+  }
+  
+  ul.date li {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+  
+  ul.date li span {
+    font-size: 2.5rem;
+  }
+  
+  .title {
+    font-size: 24px;
+  }
+  
+  .eventTitle {
+    font-size: 40px;
+  }
+  
+  .events {
+    margin-top: 1600px;
+    gap: 30px 40px;
+  }
+  
+  .container3 {
+    width: 320px; 
+  }
+}
+
+@media all and (max-width: 680px) {
+  .container3 {
+    width: 90%;
+    max-width: 450px; 
+  }
+  
+  .events {
+    gap: 30px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .countdown {
+    top: 200px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .events {
+    margin-top: 1400px;
+    padding: 30px 10px;
+    gap: 25px;
+  }
+  
+  .eventTitle {
+    font-size: 32px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .button1 a {
+    padding: 10px 36px;
+  }
+}

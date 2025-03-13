@@ -1,0 +1,15 @@
+var module_55275315088=function(){var __hs_messages={};i18n_getmessage=function(){return hs_i18n_getMessage(__hs_messages,hsVars.language,arguments)},
+i18n_getlanguage=function(){return hsVars.language},
+particlesJS("particles-js",
+            {particles:{number:{value:100,density:{enable:!0,value_area:700}},
+                        color:{value:"#ffffff"}, 
+                        shape:{type:"circle",stroke:{width:0,color:"#ffffff"},polygon:{nb_sides:10}},
+                        opacity:{value:.5,random:!1,anim:{enable:!1,speed:1,opacity_min:.1,sync:!1}},
+                        size:{value:3,random:!0,anim:{enable:!1,speed:40,size_min:.1,sync:!1}},
+                        line_linked:{enable:!0,distance:150,color:"#ffffff",opacity:.4,width:1},
+                        move:{enable:!0,speed:6,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}
+                       },
+interactivity:{detect_on:"canvas",events:{onhover:{enable:!0,mode:"grab"},
+onclick:{enable:!0,mode:"push"},resize:!0},modes:{grab:{distance:170,line_linked:{opacity:1}},
+bubble:{distance:400,size:40,duration:2,opacity:15,speed:1},repulse:{distance:600,duration:.7},push:{particles_nb:5},
+remove:{particles_nb:5}}},retina_detect:!0})}();
